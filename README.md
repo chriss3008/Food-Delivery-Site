@@ -1,2 +1,2 @@
 # Food-Delivery-Site
-Food Delivery Site - Mobile First (Front-end)
+Food Delivery Site - Mobile only (Front-end)
