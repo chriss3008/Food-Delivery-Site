@@ -134,7 +134,7 @@ This is a mobile-only Front-end project using an educational API to create a Foo
 
 ## 💡Project Wireframe/Fluxogram
 
-![Fluxogram](/)
+This is a pretty big project, so I decided not to publish any pictures, otherwise it would pollute this ReadMe.
 
 ---
 
