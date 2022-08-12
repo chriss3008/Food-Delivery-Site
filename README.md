@@ -71,54 +71,54 @@ This is a mobile-only Front-end project using an educational API to create a Foo
 
 #Navigation
    * You can navigate using the footer menu. The icon glows red depending on which page you are;
-   * YThere is also a header that lets you go back to the previous page in some of the pages.
+   * There is also a header that lets you go back to the previous page in some of the pages.
 
  #Log in Page
-   * This is the first page you'll see. That's because all the other pages besides Sign up Page use a custom hook that checks whether you are authorized to be in that page, and, if not, are redirected to this page. In other words, as you open the link, you'll be redirected here from the Home Page;
+   * This is the first page you'll see. That's because all the other pages besides the Sign up Page use a custom hook that checks whether you are authorized to be in that page, and, if not, are redirected to this page. In other words, as you open the link, you'll be redirected here from the Home Page;
    * You can go to the Sign up Page from here if you are not registered yet;
    * A custom hook form is used here;
-   * You can hide and unhide the password clicking on the "eye button";
+   * You can hide and unhide the password by clicking on the "eye icon";
    * Using Material's built-in regex, passwords are tested to be at least 6 characters long;
-   * After a successfull login, you are redirected to the Homepage.
+   * After a successful login, you are redirected to the Homepage.
 
 #Sign up Page
-   * You can go to the Log in Page from here if you are already registered;
+   * You can go back to the Log in Page from here if you misclicked and are already registered;
    * A custom hook form is used here;
-   * You can hide and unhide the password clicking on the "eye button";
+   * You can hide and unhide the password by clicking on the "eye icon";
    * Using Material's built-in regex, passwords are tested to be at least 6 characters long;
-   * "'CPF" is an 11 number Brazilian ID. You can register using any random 11 numbers, it doesn't check to see if this ID truly exists.
-   * After a successful sign up, you are redirected to the Edit ADdress Page;
+   * "'CPF" is an 11-number Brazilian ID. You can register using any random 11 numbers, it doesn't check to see if this ID truly exists.
+   * After a successful sign up, you are redirected to the Register Address Page;
 
 #Edit Address Page
    * A custom hook form is used here;
    * This page uses a "put" request. It means that it can be used to edit the info after the first time they were registered;
-   * After succsessfully editing your info, you are redirected to the Home Page;
+   * After successfully editing your info, you are redirected to the Home Page;
 
 #Home Page
-   * With the use of a custom hook called useProtectedPage, the user is redirected to the Login Page if the authorizantion token is not found in the local storage;
-   * At first, all restaurants are rendered in the page;
+   * With the use of a custom hook called useProtectedPage, the user is redirected to the Login Page if the authorization  token is not found in the local storage;
+   * At first, all restaurants are rendered on the page;
    * You can use the input box to search for a restaurant by name and the list of restaurants displayed will be updating live as you type down;
-   * Below the input box, there is scrollable cuisine box, where you can search restaurants by their respective cuisine (they are in portuguese). The selected cuisine will change its color to red;
+   * Below the input box, there is a scrollable cuisine box, where you can search restaurants by their respective cuisine (they are in Portuguese). The selected cuisine will change its color to red;
    * Both filters work together, so you can search restaurants by cuisine and also by name;
    * When you click on a restaurant card, you'll be taken to the Restaurant Details Card;
-   * When you place an order (more on that later), and active pop up will be shown on the homepage saying the restaurant name, the total and delivery time. This pop up will disappear once the delivery time has passed by in real time (i.e. if when placing an order you were told it'd take 40min, the pop up will last for 40min after the order is placed).
+   * When you place an order (more on that later), and active pop-up will be shown on the homepage saying the restaurant name, the total, and delivery time. This pop-up will disappear once the delivery time has passed by in real-time (i.e. if when placing an order you were told it'd take 40min, the pop-up will last for 40min after the order is placed).
 
  #Restaurant Details Page
-   * A list of all of the products avaoilable at that restaurant will be rendered, sorted by type of food (Pizza, Appetizer, Beverage, etc - names in Portuguese). ;
-   * Each product card has some info about it, including its price and how long it'll tae to get it to you (those are fixed values). There is also a button to add it to the cart;
+   * A list of all of the products available at that restaurant will be rendered, sorted by type of food (Pizza, Appetizer, Beverage, etc - names in Portuguese). ;
+   * Each product card has some info about it, including its price and how long it'll take to get it to you (those are fixed values). There is also a button to add it to the cart;
    * Clicking on the "add to cart button", a modal shows up and it lets you choose how many of that item you want to add to the cart button; The modal closes automatically after you choose a quantity and press "add to cart". 
-   * After adding a product to cart, the "add to cart" button changes to "remove" and changes the card to show the quantity chosen at the top right.  
-   * You can only order from one restaurant at a time (more on that later). So you can ad how many products of the same restaurant as you want, but if you go to another restaurant page and add a product from that new restaurant, your cart (saved in a Redux Global State) will be reset and that new item will be added. In other words, your cart can have as many products as you want, but all must have the same restaurant ID.
+   * After adding a product to the cart, the "add to cart" button changes to "remove" and changes the card to show the quantity chosen at the top right.  
+   * You can only order from one restaurant at a time (more on that later). So you can add how many products of the same restaurant you want, but if you go to another restaurant page and add a product from that new restaurant, your cart (saved in a Redux Global State) will be reset and that new item will be added. In other words, your cart can have as many products as you want, but all must have the same restaurant ID.
 
    #Cart Page
-   * The cart page changes dynamically as you fill your cart. It shows the restaurant name, address and delivery time to your home (this info is fixed for every restaurant). It also renders a list of each product with its quantity, ans also calculates the total, including the delivery fee. It also shows your address (this info is always present).
+   * The cart page changes dynamically as you fill your cart. It shows the restaurant name, address, and delivery time to your home (this info is fixed for every restaurant). It also renders a list of each product with its quantity, and also calculates the total, including the delivery fee. It also shows your address (this info is always present).
    * You can remove products from the cart;
    * You can select one of two payment methods (cash or credit card). If you don't, you'll get an error message;
-   * The API calculates the shipping time in real time. That means that once you have placed an order, you can't place another one until the shipping time has passaed (For example: If you placed an order in a restaurant with a 30 min shipping time, you have to wait 30 minutes after you place an order to place another one).; 
+   * The API calculates the shipping time in real-time. That means that once you have placed an order, you can't place another one until the shipping time has passed (For example: If you placed an order in a restaurant with a 30 min shipping time, you have to wait 30 minutes after you place an order to place another one).; 
 
  #Profile Page
    * You can see and edit your personal info and your address info;
-   * You can also see the history of past orders, including any ongoing one. The date format is 'DD/MM/YYYY';
+   * You can also see the history of past orders, including any ongoing ones. The date format is 'DD/MM/YYYY';
    * Finally, you can log out from your account here. You'll be redirected to the Log in Page.
 
  #Edit Profile Page
