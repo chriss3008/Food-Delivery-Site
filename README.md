@@ -48,7 +48,7 @@ This project is an elaborate Food Delivery site (mobile only). It has many real-
    * Made using React
    * Pages using Router
    * Requests using Axios
-   * Styling using Material and Styled-Components
+   * Styling using Material UI and Styled-Components
    * Hooks and Custom Hooks
    * Global State using Redux
 <!--te-->
