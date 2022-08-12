@@ -75,3 +75,8 @@ padding: 15px;
 
 `
 
+export const NoOrder = styled.h2`
+margin: auto;
+`
+
+

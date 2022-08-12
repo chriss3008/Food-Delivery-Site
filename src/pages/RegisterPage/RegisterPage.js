@@ -61,7 +61,7 @@ const RegisterPage = () => {
 
     return (
         <MainContainer>
-        <p>Edit Address</p>
+        <p>Your Address</p>
 
         <Form onSubmit={onSubmitForm}>
         <TextFieldStyled

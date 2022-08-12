@@ -103,6 +103,7 @@ color:${mainColor}
 export const Button = styled.button`
 background-color:${mainColor};
 width: 50%;
+height: 40px;
 color: white;
 margin: auto;
 border-radius: 5px;

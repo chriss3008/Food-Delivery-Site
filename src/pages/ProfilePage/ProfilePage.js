@@ -21,7 +21,7 @@ import { useProtectedPage } from "../../hooks/useProtectedPage";
 
 
 // Styles
-import { MainContainer, Info, Profile, Address, History, Logout } from "./styled";
+import { MainContainer, Info, Profile, Address, History, Logout, NoOrder } from "./styled";
 import { EditStyled } from "./styled";
 import { Button } from "@mui/material";
 
@@ -117,7 +117,7 @@ const ProfilePage = () => {
                 </Address>
                 <History>History</History>
                 <hr/>
-                {historyMap && historyMap.length !==0 ? historyMap : <h3>No orders placed yet</h3>}
+                {historyMap && historyMap.length !==0 ? historyMap : <NoOrder>No orders placed yet</NoOrder>}
             </Info>
             <Menu page={"profile"} />^
         </MainContainer>

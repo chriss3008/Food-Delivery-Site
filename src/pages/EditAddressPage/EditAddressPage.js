@@ -102,7 +102,7 @@ const EditAddressPage = () => {
 
     return (
         <MainContainer>
-            <Header title={"Address"} back />
+            <Header title={"Edit Address"} back />
 
             <Form onSubmit={onSubmitForm}>
                 <TextFieldStyled
