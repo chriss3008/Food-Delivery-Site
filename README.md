@@ -73,6 +73,14 @@ This is a mobile-only Front-end project using an educational API to create a Foo
    * You can navigate using the footer menu. The icon glows red depending on which page you are;
    * YThere is also a header that lets you go back to the previous page in some of the pages.
 
+ #Log in Page
+   * This is the first page you'll see. That's because all the other pages besides Sign up page use a custom hook that checks if you authorized to be in that page, and, if not, are redirected to this page. In other words, as you open the link, you'll be redirected frp, the home page to here;
+   * You can go to the Sign up Page from here if you are not registered yet;
+   * A custom hook form is used here;
+   * You can hide and unhide the password clicking on the "eye button";
+   * Using Material's built-in regex, passwords are tested to be at least 6 characters long;
+   * After a successfull login, you are redirected to the Homepage.
+
 #Sign up Page
    * You can go to the Log in Page from here if you are already registered;
    * A custom hook form is used here;
@@ -106,14 +114,7 @@ This is a mobile-only Front-end project using an educational API to create a Foo
    * The cart page changes dynamically as you fill your cart. It shows the restaurant name, address and delivery time to your home (this info is fixed for every restaurant). It also renders a list of each product with its quantity, ans also calculates the total, including the delivery fee. It also shows your address (this info is always present).
    * You can remove products from the cart;
    * You can select one of two payment methods (cash or credit card). If you don't, you'll get an error message;
-   * The API calculates the shipping time in real time. That means that once you have placed an order, you can't place another one until the shipping time has passaed (For example: If you placed an order in a restaurant with a 30 min shipping time, you have to wait 30 minutes after you place an order to place another one).;
-
- #Log in Page
-   * You can go to the Sign up Page from here if you are not registered yet;
-   * A custom hook form is used here;
-   * You can hide and unhide the password clicking on the "eye button";
-   * Using Material's built-in regex, passwords are tested to be at least 6 characters long;
-   * After a successfull login, you are redirected to the Homepage.
+   * The API calculates the shipping time in real time. That means that once you have placed an order, you can't place another one until the shipping time has passaed (For example: If you placed an order in a restaurant with a 30 min shipping time, you have to wait 30 minutes after you place an order to place another one).; 
 
  #Profile Page
    * You can see and edit your personal info and your address info;
