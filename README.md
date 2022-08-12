@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1 align="center">
      Food Delivery Site
 </h1>
@@ -158,7 +157,3 @@ To run this project, you should:
 ## 📝License
 
 This project is under the [MIT](./LICENSE) license.
-=======
-# Food-Delivery-Site
-Food Delivery Site - Mobile only (Front-end)
->>>>>>> 291be4129533e7f3c28fb18332f4e6f2624359f0
