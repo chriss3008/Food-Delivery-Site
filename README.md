@@ -87,12 +87,12 @@ This is a mobile-only Front-end project using an educational API to create a Foo
    * You can hide and unhide the password by clicking on the "eye icon";
    * Using Material's built-in regex, passwords are tested to be at least 6 characters long;
    * "'CPF" is an 11-number Brazilian ID. You can register using any random 11 numbers, it doesn't check to see if this ID truly exists.
-   * After a successful sign up, you are redirected to the Register Address Page;
+   * After a successful sign up, you are redirected to the Register Address Page.
 
 #Edit Address Page
    * A custom hook form is used here;
    * This page uses a "put" request. It means that it can be used to edit the info after the first time they were registered;
-   * After successfully editing your info, you are redirected to the Home Page;
+   * After successfully editing your info, you are redirected to the Home Page.
 
 #Home Page
    * With the use of a custom hook called useProtectedPage, the user is redirected to the Login Page if the authorization  token is not found in the local storage;
@@ -106,15 +106,15 @@ This is a mobile-only Front-end project using an educational API to create a Foo
  #Restaurant Details Page
    * A list of all of the products available at that restaurant will be rendered, sorted by type of food (Pizza, Appetizer, Beverage, etc - names in Portuguese). ;
    * Each product card has some info about it, including its price and how long it'll take to get it to you (those are fixed values). There is also a button to add it to the cart;
-   * Clicking on the "add to cart button", a modal shows up and it lets you choose how many of that item you want to add to the cart button; The modal closes automatically after you choose a quantity and press "add to cart". 
-   * After adding a product to the cart, the "add to cart" button changes to "remove" and changes the card to show the quantity chosen at the top right.  
+   * Clicking on the "add to cart button", a modal shows up and it lets you choose how many of that item you want to add to the cart button; The modal closes automatically after you choose a quantity and press "add to cart"; 
+   * After adding a product to the cart, the "add to cart" button changes to "remove" and changes the card to show the quantity chosen at the top right;
    * You can only order from one restaurant at a time (more on that later). So you can add how many products of the same restaurant you want, but if you go to another restaurant page and add a product from that new restaurant, your cart (saved in a Redux Global State) will be reset and that new item will be added. In other words, your cart can have as many products as you want, but all must have the same restaurant ID.
 
    #Cart Page
    * The cart page changes dynamically as you fill your cart. It shows the restaurant name, address, and delivery time to your home (this info is fixed for every restaurant). It also renders a list of each product with its quantity, and also calculates the total, including the delivery fee. It also shows your address (this info is always present).
    * You can remove products from the cart;
    * You can select one of two payment methods (cash or credit card). If you don't, you'll get an error message;
-   * The API calculates the shipping time in real-time. That means that once you have placed an order, you can't place another one until the shipping time has passed (For example: If you placed an order in a restaurant with a 30 min shipping time, you have to wait 30 minutes after you place an order to place another one).; 
+   * The API calculates the shipping time in real-time. That means that once you have placed an order, you can't place another one until the shipping time has passed (For example: If you placed an order in a restaurant with a 30 min shipping time, you have to wait 30 minutes after you place an order to place another one).
 
  #Profile Page
    * You can see and edit your personal info and your address info;
@@ -123,11 +123,11 @@ This is a mobile-only Front-end project using an educational API to create a Foo
 
  #Edit Profile Page
    * The current info you have saved is displayed as placeholders;
-   * You can freely edit your personal info here;
+   * You can freely edit your personal info here.
 
  #Edit Address Page
    * The current info you have saved is displayed as placeholders;
-   * You can freely edit your address info here;
+   * You can freely edit your address info here.
 
 
 
