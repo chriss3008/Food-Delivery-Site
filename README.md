@@ -120,11 +120,11 @@ This is a mobile-only Front-end project using an educational API to create a Foo
    * You can also see the history of past orders, including any ongoing one. The date format is 'DD/MM/YYYY';
    * Finally, you can log out from your account here. You'll be redirected to the Log in Page.
 
-    #Edit Profile Page
+ #Edit Profile Page
    * The current info you have saved is displayed as placeholders;
    * You can freely edit your personal info here;
 
-    #Edit Address Page
+ #Edit Address Page
    * The current info you have saved is displayed as placeholders;
    * You can freely edit your address info here;
 
