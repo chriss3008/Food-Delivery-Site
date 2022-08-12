@@ -74,7 +74,7 @@ This is a mobile-only Front-end project using an educational API to create a Foo
    * YThere is also a header that lets you go back to the previous page in some of the pages.
 
  #Log in Page
-   * This is the first page you'll see. That's because all the other pages besides Sign up page use a custom hook that checks if you authorized to be in that page, and, if not, are redirected to this page. In other words, as you open the link, you'll be redirected frp, the home page to here;
+   * This is the first page you'll see. That's because all the other pages besides Sign up Page use a custom hook that checks whether you are authorized to be in that page, and, if not, are redirected to this page. In other words, as you open the link, you'll be redirected frp, the home page to here;
    * You can go to the Sign up Page from here if you are not registered yet;
    * A custom hook form is used here;
    * You can hide and unhide the password clicking on the "eye button";
