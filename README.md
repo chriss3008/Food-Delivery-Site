@@ -1,8 +1,8 @@
 <h1 align="center">
-     Food Delivery Site
+     Food Delivery Site (mobile only)
 </h1>
 
-Food Delivery Site (mobile first).
+Food Delivery Site (mobile only). Please, try it on your phone or using developer mode - mobile.
 
 
 ---
@@ -27,7 +27,7 @@ Food Delivery Site (mobile first).
 
 ##  🕵About
 
-This project is an elaborate Food Delivery site (mobile first). It has many real-life functionalities, like signup/login, authentication and authorization, filters, and search, etc. It uses an educational [**API**](https://documenter.getpostman.com/view/7549981/SWTEdGtT) (in portuguese). 
+This project is an elaborate Food Delivery site (mobile only). It has many real-life functionalities, like signup/login, authentication and authorization, filters, and search, etc. It uses an educational [**API**](https://documenter.getpostman.com/view/7549981/SWTEdGtT) (in portuguese). 
 
 ---
 
@@ -38,7 +38,7 @@ This project is an elaborate Food Delivery site (mobile first). It has many real
 ---
 ## 🔗Link for the deployed website
 
-- **Surge:** [Food Delivery - This is a mobile first project](https://food-delivery-christian-penna-botto.surge.sh/) 
+- **Surge:** [Food Delivery - This is a mobile only project](https://food-delivery-christian-penna-botto.surge.sh/) 
 
 ---
 
@@ -50,6 +50,7 @@ This project is an elaborate Food Delivery site (mobile first). It has many real
    * Requests using Axios
    * Styling using Material and Styled-Components
    * Hooks and Custom Hooks
+   * Global State using Redux
 <!--te-->
 
 
@@ -62,7 +63,7 @@ This project is an elaborate Food Delivery site (mobile first). It has many real
 
 ##  🎯Objetive
 
-This is a mobile-first Front-end project using an educational API to create a Food Delivery site using the technologies described in [Technologies](#Technologies).
+This is a mobile-only Front-end project using an educational API to create a Food Delivery site using the technologies described in [Technologies](#Technologies).
 
 ---
 
