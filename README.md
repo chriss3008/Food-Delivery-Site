@@ -57,7 +57,7 @@ This project is an elaborate Food Delivery site (mobile only). It has many real-
 ---
 ##  🧭Status 
 
- - ⌛ Under Construction
+ - ⌛ Done
  
 ---
 
